@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Jost', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-brown text-white px-6 py-3 font-medium transition-all duration-300 hover:bg-brand-gold hover:text-brand-brown;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-white text-white px-6 py-3 font-medium transition-all duration-300 hover:bg-white hover:text-brand-brown;
+  }
+  
+  .btn-gold {
+    @apply bg-brand-gold text-brand-brown px-6 py-3 font-medium transition-all duration-300 hover:bg-brand-gold-light;
+  }
+  
+  .product-gradient-dark {
+    background: radial-gradient(ellipse at 40% 35%, #d4a86a, #8b5520 55%, #2e1406);
+  }
+  
+  .product-gradient-milk {
+    background: radial-gradient(ellipse at 40% 35%, #f0d898, #c89040 55%, #5a3010);
+  }
+  
+  .product-gradient-white {
+    background: radial-gradient(ellipse at 40% 35%, #fff8f0, #f0e0c0 55%, #c8903c);
+  }
+  
+  .product-gradient-green {
+    background: radial-gradient(ellipse at 40% 35%, #d0e8a8, #88b040 55%, #304810);
+  }
+  
+  .product-gradient-pink {
+    background: radial-gradient(ellipse at 40% 35%, #f8d0c8, #e08878 55%, #8b2820);
+  }
+  
+  .product-gradient-caramel {
+    background: radial-gradient(ellipse at 40% 35%, #ffe0a0, #e8a028 55%, #703800);
+  }
+  
+  .product-gradient-blue {
+    background: radial-gradient(ellipse at 40% 35%, #d0eaf8, #78b0d8 55%, #183860);
+  }
+  
+  .product-gradient-purple {
+    background: radial-gradient(ellipse at 40% 35%, #f0d8f8, #c080d8 55%, #501870);
+  }
+  
+  .product-gradient-peach {
+    background: radial-gradient(ellipse at 40% 35%, #ffecd0, #e8a060 55%, #703820);
+  }
+  
+  .product-gradient-gold {
+    background: radial-gradient(ellipse at 40% 35%, #f8e8c0, #d0a040 55%, #604000);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(125deg, #0e0704 0%, #2a1408 30%, #5a3010 60%, #c8963c 100%);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .cart-drawer-enter {
+    transform: translateX(100%);
+  }
+  
+  .cart-drawer-enter-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .cart-drawer-exit {
+    transform: translateX(0);
+  }
+  
+  .cart-drawer-exit-active {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+}
